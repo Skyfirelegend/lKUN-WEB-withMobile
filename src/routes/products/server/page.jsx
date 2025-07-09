@@ -305,7 +305,6 @@ const Index = () => {
                                   </div>
                                   <div className={styles.type}>{el.type}</div>
                                 </div>
-                                {/* {index != 2 && <div className={styles.line}></div>} */}
                               </div>
                             ))}
                           </div>
@@ -319,7 +318,6 @@ const Index = () => {
                                   </div>
                                   <div className={styles.type}>{el.type}</div>
                                 </div>
-                                {/* {index != 2 && <div className={styles.line}></div>} */}
                               </div>
                             ))}
                           </div>
@@ -425,14 +423,9 @@ const Index = () => {
             <div className={styles.serverWrapper}>
               <div className={styles.banner}>
                 <img style={{ width: '100%', aspectRatio: 'auto 2160/520' }} className={styles.loadPicture} draggable="false" src={serveBanner} alt="" />
-                {/* <div className={styles.title}>裸金属服务器</div>
-            <div className={styles.desc}>
-              裸金属服务器（Bare
-              Meta）具有安全的物理隔离和强大的计算能力，服务于深度学习、科学计算、图形可视化、视频处理多种应用场景，分钟级的交付周期将提供给您实时的业务响应能力，有效缓解计算压力，助力您的核心业务飞速成长。
-            </div> */}
               </div>
 
-              <div className={styles2.BtnAera}>
+              <div className={styles2.BtnAeraMobile}>
                 <div className={styles2.Area1}>
                   <div className={styles2.Text1}>
                     区域
@@ -478,18 +471,54 @@ const Index = () => {
                             {str}
                           </div>
                         ))}
-                        {item.setting.map((el, index) => (
-                          <div key={el.type} className={styles.settingItemWrapperMobile}>
-                            <div className={styles.settingItemMobile}>
+                        <div
+                          style={{
+                            display: 'flex',
+                            // width: '82vw',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            justifyItems: 'center'
+                          }}
+                        >
+                          <div>
+                            {item.setting.map((el, index) => (
+                              <div key={el.type} className={styles.settingItemWrapper}>
+                                <div className={styles.settingItem}>
+                                  <div className={styles.name}>
+                                    <img src={index === 1 ? doc : chip} alt="" />
+                                    <div className={styles.nameText}>{el.name}</div>
+                                  </div>
+                                  <div className={styles.type}>{el.type}</div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                          <div>
+                            {item.setting2.map((el, index) => (
+                              <div key={el.type} className={styles.settingItemWrapper}>
+                                <div className={styles.settingItem}>
+                                  <div className={styles.name}>
+                                    <img src={index === 1 ? disk : chip} alt="" />
+                                    <div className={styles.nameText}>{el.name}</div>
+                                  </div>
+                                  <div className={styles.type}>{el.type}</div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+
+                        </div>
+                        {/* {item.setting.map((el, index) => (
+                          <div key={el.type} className={styles.settingItemWrapper}>
+                            <div className={styles.settingItem}>
                               <div className={styles.name}>
                                 <img src={index === 2 ? doc : chip} alt="" />
-                                <div className={styles.nameTextMobile}>{el.name}</div>
+                                <div className={styles.nameText}>{el.name}</div>
                               </div>
                               <div className={styles.type}>{el.type}</div>
                             </div>
-                            {index != 2 && <div className={styles.line}></div>}
                           </div>
-                        ))}
+                        ))} */}
                         <div className={styles.line2}></div>
                         <div className={styles.price}>
                           {/* <div className={styles.label}>价格<span style={{ fontStyle: 'italic', fontWeight: '700', fontSize: '28px', color: 'rgba(255, 120, 0, 1)' }}> 低至5折！</span></div> */}
@@ -499,10 +528,10 @@ const Index = () => {
                             showClick2 === 1 &&
                             <div className={styles.value}>
                               ￥
-                              <span style={{ fontSize: '1.7vw', color: 'rgba(255, 120, 0, 1)', fontWeight: '600' }}>
+                              <span style={{ fontSize: '1.82vw', color: 'rgba(255, 120, 0, 1)', fontWeight: '600' }}>
                                 {item.price}
                               </span>
-                              <Text delete style={{ fontSize: '0.4vw' }}>
+                              <Text delete style={{ fontSize: '0.9vw' }}>
                                 {/* <Text delete> */}
                                 {item.costPrice}
                               </Text>
@@ -513,12 +542,12 @@ const Index = () => {
                           {
                             showClick2 === 2 &&
                             <div>
-                              <div className={styles.value} style={{ transform: 'translate(-80%,-100%)' }}>
+                              <div className={styles.value} style={{ transform: 'translate(-80%,-55%)' }}>
                                 ￥
                                 <span style={{ fontSize: '1.82vw', color: 'rgba(255, 120, 0, 1)', fontWeight: '600' }}>
                                   {item.price2}
                                 </span>
-                                <Text delete style={{ fontSize: '0.7vw' }}>
+                                <Text delete style={{ fontSize: '0.9vw' }}>
                                   {/* <Text delete> */}
                                   {item.costPrice2}
                                 </Text>
@@ -526,9 +555,9 @@ const Index = () => {
                               </div>
 
                               <div
-                                style={{ transform: 'translate(-65%,-0.2vw)', position: 'absolute', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                style={{ transform: 'translate(-65%,0.1vw)', position: 'absolute', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                                 <span
-                                  style={{ fontSize: '0.93vw', width: '100%', }}
+                                  style={{ fontSize: '1.2vw', width: '7vw', transform: 'translate(30%,0.3vw)' }}
                                 >
                                   购买时长
                                 </span>
@@ -539,13 +568,13 @@ const Index = () => {
                                   variant="borderless"
                                   // variant="underlined"
                                   options={[
-                                    { value: "1", label: <span style={{ fontSize: '0.93vw' }}>1个月</span> },
-                                    { value: "3", label: <span style={{ fontSize: '0.93vw' }}>3个月</span> },
-                                    { value: "6", label: <span style={{ fontSize: '0.93vw' }}>6个月</span> },
-                                    { value: "12", label: <span style={{ fontSize: '0.93vw' }}>12个月</span> },
+                                    { value: "1", label: <span style={{ fontSize: '1.2vw' }}>1个月</span> },
+                                    { value: "3", label: <span style={{ fontSize: '1.2vw' }}>3个月</span> },
+                                    { value: "6", label: <span style={{ fontSize: '1.2vw' }}>6个月</span> },
+                                    { value: "12", label: <span style={{ fontSize: '1.2vw' }}>12个月</span> },
                                   ]}
                                   dropdownStyle={{
-                                    width: '7vw',
+                                    width: '12vw',
                                   }}
                                 />
                               </div>

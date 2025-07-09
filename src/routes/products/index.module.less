@@ -399,10 +399,10 @@
         margin: 30px 30px 0 0;
         position: relative;
         background-image: url('./img/settingIcon.png');
-        background-size: 203px;
+        background-size: 12vw;
         background-repeat: no-repeat;
         background-position: 100% 0;
-        width: 83%;
+        width: 90%;
 
         :global {
           .ant-card-body {
@@ -414,7 +414,6 @@
           color: #333;
           // font-size: 18px;
           font-size: 1.2vw;
-          // font-size: 0.1vw;
           font-style: normal;
           font-weight: 600;
           line-height: 28px;
@@ -444,49 +443,88 @@
           justify-content: space-between;
 
 
-          background-image: url('./server/img/settingBtg.svg');
+          // background-image: url('./server/img/settingBtg.svg');
           // background-size: 403px;
           background-size: 25vw;
           background-repeat: no-repeat;
           // background-position: 42% 80%;
-          background-position: 20.8vw 80%;
+          // background-position: 20.8vw 80%;
 
-          .settingItemWrapperMobile {
+          .settingItemWrapper {
             display: flex;
             justify-content: flex-start;
             flex-direction: row;
             // transform: translate(15%,-100%);
-            transform: translate(15%,-65%);
+            transform: translate(30%,-17%);
+
+            margin-right: 3vw;
+            margin-top: 1.5vw;
 
 
 
             // align-items: flex-start;
 
-            .settingItemMobile {
+            .settingItem {
+
+              height: 3.8vw;
+              width: 12vw;
+              background: #FFFFFF;
+              border: 0.191772px solid #D7D7D7;
+              box-shadow: 0px 0.958861px 3.54778px rgba(0, 0, 0, 0.09);
+              border-radius: 0.2vw;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-items: center;
+              justify-content: center;
+
+              &:hover{
+                background: #FFFFFF;
+                box-shadow: 2px 1px 11.2px rgba(130, 165, 224, 0.47);
+                border-radius: 0.2vw;
+
+                background-image: url('./server/img/cusmhoverBtg.svg');
+                // background-size: 203px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                // background-position: 100% 0;
+
+                .name{
+                  .nameText{
+                    color: #0F62F0;
+                  }
+                }
+              }
+
               .name {
                 display: flex;
                 // align-items: center;
-                justify-items: center;
-                justify-content: center;
+                // justify-items: center;
+                // justify-content: center;
 
 
                 img {
                   display: block;
                   // width: 22px;
                   // width: 15%;
-                  width: 2.7vw;
+                  width: 1.2vw;
                   margin-right: 3px;
                 }
 
-                .nameTextMobile {
+                .nameText {
                   // color: #000;
                   color: #333333;
                   text-align: center;
                   // font-size: 14px;
-                  font-size: 0.5vw;
+                  font-size: 0.95vw;
                   font-style: normal;
                   font-weight: 400;
                   line-height: normal;
+
+                  // &:hover{
+                  //   color: #0F62F0;
+                  // }
                 }
               }
 
@@ -494,30 +532,21 @@
                 color: #000;
                 text-align: center;
                 // font-size: 16px;
-                // font-size: 0.97vw;
-                font-size: 0.45vw;
+                font-size: 0.97vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
 
-                background: #FFFFFF;
-                box-shadow: 5px 4px 4.3px 3px rgba(176, 204, 251, 0.25);
-                border-radius: 2.5px;
-                // height: 100%;
-                height: 3vw;
-                // width: 140px;
-                width: 10vw;
-
-                // left: 50%;
-                // top: 50%;
-                // transform: translate(0%, 50%);
-
-                display: flex;
-                align-items: center;
-                justify-items: center;
-                justify-content: center;
-                // left: 50%;
-                // top: 50%;
+                //old setting
+                // background: #FFFFFF;
+                // box-shadow: 5px 4px 4.3px 3px rgba(176, 204, 251, 0.25);
+                // border-radius: 2.5px;
+                // height: 3vw;
+                // width: 8vw;
+                // display: flex;
+                // align-items: center;
+                // justify-items: center;
+                // justify-content: center;
               }
             }
 
@@ -539,7 +568,7 @@
               height: 12vw;
               background-color: #333;
               opacity: .1;
-              margin: 0 40px;
+              margin: 0 5vw;
           }
 
         }
@@ -561,16 +590,16 @@
 
           .value {
             color: #0F62F0;
-            width: 16vw;
             // font-size: 14px;
-            font-size: 0.8vw;
+            font-size: 0.95vw;
             font-style: normal;
             font-weight: 500;
             line-height: 28px;
             position: absolute;
             /* 200% */
-            transform: translate(-70%,0%);
+            transform: translate(-80%,0%);
             text-align: left;
+            width: 12vw;
           }
           .select{
             width: 10vw;
@@ -593,7 +622,9 @@
             line-height: normal;
           }
 
-          .value {}
+          .value {
+
+          }
 
         }
 
@@ -602,24 +633,34 @@
             display: block;
             // width: 160px;
             width: 10vw;
-            // height: 5vw;
+            height: 4vw;
             color: #FFF;
+
+            transform: translate(0,-35%);
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
             // padding: 11px;
             // padding: 0.65vw;
             // padding: 6%;
             // padding: 0.6875vw;
           }
 
-          margin-top: -10px;
+          // margin-top: -10px;
 
           background-color: #0F62F0;
           text-align: center;
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
           // font-size: 18px;
-          font-size: 1.05vw;
+          font-size: 1.125vw;
           // font-size: ;
           font-style: normal;
           font-weight: 600;
           line-height: 28px;
+
 
           transform: translate(45%,0%);
           &:hover {
@@ -844,7 +885,7 @@
 
   .compute {
     .banner {
-
+      z-index: 0;
       // padding: 40px 60px 50px 40px;
       // background-image: url('./img/computeBanner.png');
       // background-size: 100% 100%;

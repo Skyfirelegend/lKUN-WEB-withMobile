@@ -268,7 +268,7 @@ const CPOHeaderMobile = () => {
 
       {
         collapsed &&
-        <Menu onClick={handleClick} theme='light' openKeys={itemList} style={{ width: '100%', position: 'absolute', transform: 'translate(-9.5vw,15vw)', height: '100%', zIndex: '0' }} className={styles.menuMobile} mode="inline" items={items} selectedKeys={[selectedKey]} />
+        <Menu onClick={handleClick} theme='light' openKeys={itemList} style={{ width: '100%', position: 'absolute', transform: 'translate(-9.5vw,72vw)', height: '130vw', zIndex: 999 }} className={styles.menuMobile} mode="inline" items={items} selectedKeys={[selectedKey]} />
       }
 
 

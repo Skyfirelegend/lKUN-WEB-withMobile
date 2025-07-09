@@ -96,7 +96,7 @@ const CPOServerCard = () => {
     return (
         <FadeInContainer children={
             <div className={styles.banner}>
-                <img style={{ width: '100%', aspectRatio: 'auto 2160/520', position: 'relative', zIndex: 2 }} src={Banner} alt="" />
+                <img style={{ width: '100%', aspectRatio: 'auto 2160/520', position: 'relative', zIndex: 0 }} src={Banner} alt="" />
                 <div><a className={styles.btn1} href={`${cpo_address}/models`}>立即体验</a></div>
             </div>
 
