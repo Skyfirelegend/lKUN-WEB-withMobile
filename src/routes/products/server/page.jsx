@@ -46,7 +46,7 @@ const serverData = [
     price: "3.64",
     costPrice: "5.20",
     price2: "2619",
-    costPrice2: "3740"
+    costPrice2: "3744"
   },
   {
     name: ["NVIDIA A100"],
@@ -101,7 +101,7 @@ const serverData = [
     price: "3.64",
     costPrice: "5.20",
     price2: "2619",
-    costPrice2: "3740"
+    costPrice2: "3744"
   },
 ];
 
