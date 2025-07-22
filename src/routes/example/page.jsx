@@ -3,6 +3,7 @@ import { Flex } from 'antd';
 import React, { useEffect } from 'react';
 import lingang from './img/lingang.png';
 import shenzhenUniversity from './img/shenzhen-university.png';
+import SUAT from './img/SUAT.svg'
 import zhongan from './img/zhongan.png'
 import banner from './img/banner.png'
 import styles from './index.module.less'
@@ -13,12 +14,17 @@ const data = [
   {
     img: zhongan,
     title: '中安颉数字科技（深圳）有限公司',
-    desc: '通过「弹性AI算力资源」NVIDIA 4090服务器，中安颉数字科技(深圳)有限公司成功为一家大型跨国医药企业客户研发出了医疗数据分析与可视化工具，显著提升了规模化医疗数据处理速度与精度，有效赋能分析人员进行生物统计。'
+    desc: '通过「弹性AI算力资源」NVIDIA 4090 GPU，中安颉数字科技(深圳)有限公司成功为一家大型跨国医药企业客户研发出了医疗数据分析与可视化工具，显著提升了规模化医疗数据处理速度与精度，有效赋能分析人员进行生物统计。'
   },
   {
     img: shenzhenUniversity,
     title: '深圳大学',
-    desc: '通过「弹性AI算力资源」NVIDIA 4090服务器，深圳大学“大学生创新创业大赛”参赛学生成功实现元宇宙渲染，在虚拟现实、增强现实和混合现实环境中创建了逼真的图像，完成了三维建模、纹理映射、光照处理、物理仿真等。'
+    desc: '通过「弹性AI算力资源」NVIDIA 4090 GPU，深圳大学“大学生创新创业大赛”参赛学生成功实现元宇宙渲染，在虚拟现实、增强现实和混合现实环境中创建了逼真的图像，完成了三维建模、纹理映射、光照处理、物理仿真等。'
+  },
+  {
+    img: SUAT,
+    title: '深圳理工大学',
+    desc: '通过「弹性AI算力资源」NVIDIA 4090 GPU，深圳理工大学进行可控虚拟数字人生成模型研究与多模态推理大模型应用研究，通过视频生成大模型实现了数字人动态3D表达，通过多任务联合视觉推理实现了更高层次的人机交互与智能决策。'
   },
 ]
 const Index = () => {
