@@ -11,6 +11,8 @@ import shenzhen from "../../static/shenzhen.png";
 import close from "../../static/close.png";
 import langke from "../../static/langke.png";
 
+import gongan from "../../static/logo_gongan.png"
+
 import Media from 'react-media';
 
 
@@ -191,10 +193,29 @@ const CPOFooter = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "rgba(51,51,51,0.6)"
+                    color: "rgba(51,51,51,0.6)",
+                    marginRight: "1vw"
                   }}>
                   粤ICP备2024335770号-2
                 </a>
+
+                <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44020302000291"
+                  rel="noreferrer"
+                  target="_blank"
+                  style={{
+                    color: "rgba(51,51,51,0.6)"
+                  }}>
+                  <img
+                    src={gongan}
+                    style={{
+                      height: "17px",
+                      width: '16px',
+                      marginRight: '1px',
+                      transform: 'translateY(2px)'
+                    }}
+                  />
+                  粤公网安备44020302000291号
+                </a >
               </div>
             </>
           }
@@ -334,10 +355,31 @@ const CPOFooter = () => {
                   rel="noopener noreferrer"
                   style={{
                     color: "rgba(51,51,51,0.6)",
-                    fontSize: '1.8vw'
+                    fontSize: '1.8vw',
+                    marginRight: "1.3vw",
                   }}>
                   粤ICP备2024335770号-2
                 </a>
+                <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44020302000291"
+                  rel="noreferrer"
+                  target="_blank"
+                  style={{
+                    color: "rgba(51,51,51,0.6)",
+                    fontSize: '1.8vw'
+                  }}
+                >
+                  <img
+                    src={gongan}
+                    style={{
+                      height: "17px",
+                      width: '16px',
+                      marginRight: '0.2vw',
+                      transform: 'translateY(0.3vw)',
+                      // transform: 'translateY(2px)'
+                    }}
+                  />
+                  粤公网安备44020302000291号
+                </a >
               </div>
             </>
           }
