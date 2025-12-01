@@ -43,10 +43,10 @@ const serverData = [
         type: "480GB",
       },
     ],
-    price: "3.64",
-    costPrice: "5.20",
-    price2: "2619",
-    costPrice2: "3744"
+    price: "1.00",
+    costPrice: "2.00",
+    price2: "720",
+    costPrice2: "1440"
   },
   {
     name: ["NVIDIA A100"],
@@ -350,7 +350,7 @@ const Index = () => {
                                 {/* <Text delete> */}
                                 {item.costPrice}
                               </Text>
-                              /台/时
+                              {item.name[0] === "NVIDIA 4090" ? '/卡/时' : '/台/时'}
                             </div>
                           }
 
@@ -366,7 +366,7 @@ const Index = () => {
                                   {/* <Text delete> */}
                                   {item.costPrice2}
                                 </Text>
-                                /台/月
+                                {item.name[0] === "NVIDIA 4090" ? '/卡/月' : '/台/月'}
                               </div>
 
                               <div
@@ -535,7 +535,7 @@ const Index = () => {
                                 {/* <Text delete> */}
                                 {item.costPrice}
                               </Text>
-                              /台/时
+                              {item.name[0] === "NVIDIA 4090" ? '/卡/时' : '/台/时'}
                             </div>
                           }
 
@@ -551,7 +551,7 @@ const Index = () => {
                                   {/* <Text delete> */}
                                   {item.costPrice2}
                                 </Text>
-                                /台/月
+                                {item.name[0] === "NVIDIA 4090" ? '/卡/月' : '/台/月'}
                               </div>
 
                               <div
